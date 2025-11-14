@@ -21,7 +21,7 @@ def initialize_model(model_id):
     return ChatWatsonx(
         model_id=model_id,
         url="https://us-south.ml.cloud.ibm.com",
-        api_key= "jHwhvRWKReEUOJLY2faTjaJ0DdYq7HeIE9ikNJGeC73-",
+        api_key= "xyz",
         project_id="f0b17380-15dd-4268-b178-7a8b793f7881",
         params=PARAMETERS
     )
@@ -60,4 +60,5 @@ def granite_response(system_prompt, user_prompt):
     return get_ai_response(granite_llm, granite_template, system_prompt, user_prompt)
 
 def mixtral_response(system_prompt, user_prompt):
+
     return get_ai_response(mixtral_llm, mixtral_template, system_prompt, user_prompt)
